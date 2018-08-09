@@ -7,26 +7,6 @@ if (req.status === 200) {
     var url = window.location.href;
     var params = (new URL(document.location)).searchParams;
     var info = params.get("id");
-    console.log(pokedex.cards[1].name);
-
-    for (var i = 0; i < pokedex.cards.length; i++) {
-        // Tri ordre alphabetique
-
-        function tri(a, b)
-
-        {
-
-            return (a.name > b.name) ? 1 : -1;
-
-        }
-
-        var listePokemons = pokedex.cards[i];
-
-        listePokemons.sort(tri);
-
-        console.log(listePokemons);
-
-    }
 
     for (var i = 0; i < pokedex.cards.length; i++) {
         var trHead = document.createElement("tr");
